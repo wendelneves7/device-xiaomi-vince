@@ -1,5 +1,6 @@
 #
 # Copyright (C) 2017 The LineageOS Project
+# Copyright (C) 2017 The Liquid Remix Open Source Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -21,13 +22,13 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from vince device
 $(call inherit-product, device/xiaomi/vince/device.mk)
 
-# Inherit some common AOSiP stuff.
-$(call inherit-product, vendor/aosip/config/common_full_phone.mk)
+# Inherit some common LiquidRemix stuff.
+$(call inherit-product, vendor/liquid/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions
 TARGET_VENDOR := Xiaomi
 PRODUCT_DEVICE := vince
-PRODUCT_NAME := aosip_vince
+PRODUCT_NAME := liquid_vince
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi 5 Plus
 PRODUCT_MANUFACTURER := Xiaomi
